@@ -20,7 +20,7 @@ I was using figima before, and this project was where I mainly developed my adob
 
 * AV417
 
-## Reason why it is not catagorised
+## Reason why it is not categorised
 * The pages was mainly organised via visal presentation.
 * I'm the only stuff maintaning this and it doesn't matter in this project.
 
