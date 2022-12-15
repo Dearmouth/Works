@@ -1,2 +1,2 @@
 # Works
-Mainly for showing the works that I've done
+It is ainly for showing the works that I've done
