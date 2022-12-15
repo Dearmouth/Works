@@ -1,2 +1,2 @@
 # Works
-For showing some of my works
+Mainly for showing the works that I've done
