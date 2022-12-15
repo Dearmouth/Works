@@ -1,7 +1,7 @@
 # Works
-Hi, this is a student project I've involved with. I was mainly be responsible for UI design and front end. We got 87 for this.
+Hi, this is a student project I was involved with. I was mainly be responsible for UI design and front end. We got 87 for this.
 
-This was done via Figama:
+This was done via Figma:
 
 ![alt text](logo.png)
 
