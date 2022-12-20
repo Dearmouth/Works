@@ -19,4 +19,4 @@ We used MongoDB for storing Data.
 ## DeploymentDiagram
 The lower half was drawm by another team mate. She was a familiar and in charge of that part, which i really want to get to know more about.
 
-![alt text](DeploymentDiagram.png)
+![alt text](DeploymenDiagram.png)
