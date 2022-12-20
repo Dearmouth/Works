@@ -1,0 +1,125 @@
+.export-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  position: relative;
+  padding-right: 100px;
+  gap: 30px;
+  top: 10vh;
+  font-size: 25px;
+}
+
+.pageSubTitle {
+  width: 80%;
+  top: 10vh;
+}
+
+.data-page {
+  justify-content: center;
+  position: relative;
+  left: 331px;
+  width: calc(100vw - 331px);
+  height: 100vh;
+  font-family: "Sanchez One";
+  /* animation: 3s ease-in 2s linear infinite; */
+  overflow: auto;
+}
+
+.data-page .pageSubTitle {
+  font-size: 30px;
+  left: 100px;
+  position: relative;
+}
+.data-page .pageTitle {
+  position: relative;
+  padding-top: 40px;
+  width: 1em;
+  left: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.export-form__content{
+  border-bottom: 2px solid black;
+  height: 200px;
+}
+
+.import-btn{
+  color: white;
+  top: 11vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .export-content {
+    padding: 30px;
+    top: 5vh;
+    height: calc(98vh - 300px);
+    overflow: scroll;
+  }
+  .pageSubTitle {
+    margin-left: -90px;
+  }
+
+  .export-form__content{
+    border-bottom: 2px solid black;
+    height: 20vh;
+    min-height: 100px;
+  }
+
+  .import-btn{
+    color: white;
+    top: 16vh;
+    font-size: 2.5vh;
+  }
+  
+  .data-page {
+    padding: 1rem;
+    border-color: black;
+    border-width: 30px;
+    justify-content: center;
+    position: fixed;
+    font-size: 2.5vw;
+    left: calc(5vw - 20px);
+    top: 140px;
+    width: 90vw;
+    height: calc(98vh - 100px);
+    z-index: -1;
+    border: 1px solid #aeaeae;
+    background: linear-gradient(#fafafa59, #abd5fdf6) !important;
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    font-family: PT Sans Caption;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 4px rgb(0 0 0 / 25%)
+  }
+    
+}
+
+.export-filename-form-segment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  gap: 10px;
+}
+
+.export-filename-form-segment .form-input {
+  flex: 2;
+}
+
+#export-filename.incomplete {
+  border: 1px solid red;
+}
+
+.file-btn {
+  background: #7db7d8;
+  border-color: black;
+  padding: 5px 40px 5px 40px;
+  position: absolute;
+  right: 10%;
+}
+

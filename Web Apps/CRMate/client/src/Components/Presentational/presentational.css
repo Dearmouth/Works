@@ -1,0 +1,454 @@
+/* override broswer default setiing */
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+/* hide all scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Logo */
+.logo-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.logo-wrapper:hover {
+  cursor: pointer;
+}
+
+/* Contact card */
+
+.contact-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background: white;
+  font-family: "Sanchez One";
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-card__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card__header__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-card__properties {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-card__property {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.2rem;
+}
+
+.contact-card__name {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Secular One";
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.contact-card__property__label {
+  font-weight: 800;
+  width: 30%;
+}
+
+.contact-card__property__field {
+  flex-wrap: wrap;
+  width: 70%;
+  z-index: 2;
+}
+
+.contact-card__tag {
+  background: #e3e3e3;
+  padding: 0 1rem;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  margin: 2px;
+}
+
+.contact-card__tag:hover {
+  position: relative;
+  background-color: #c5efa4;
+  font-size: 120%;
+  overflow: visible;
+  max-width: fit-content;
+  font-weight: 900;
+  z-index: 6;
+}
+
+.contact-card__image {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+  height: 10em;
+  width: 30%;
+  padding-left: calc(50% - 50px);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  font-family: "Sanchez One";
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper__panel {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .btn {
+    border-radius: 40px;
+    outline: none;
+    font-weight: bold;
+    background: white;
+    border: none;
+    margin: 2% 0;
+    font-size: 30px;
+  }
+
+  .contact-card__edit {
+    padding-bottom: 30px;
+
+  }
+
+  .wrapper__panel--left {
+    flex: 1;
+  }
+
+  .wrapper__panel--right {
+    flex: 2;
+    height: 100vh;
+    position: relative;
+  }
+
+  /* Contact card */
+  .contact-card {
+    padding: 1rem;
+    gap: 10px;
+    border-radius: 20px;
+    background: white;
+    width: 350px;
+    font-family: "Sanchez One";
+  }
+
+  .contact-card__wrapper-0 {
+    position: absolute;
+    z-index: 100;
+    left: 30px;
+    top: 250px;
+    padding: 0;
+  }
+
+  .contact-card__wrapper-1 {
+    position: absolute;
+    padding: 0;
+    right: 20px;
+  }
+
+  .wrapper__panel__footer {
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+  }
+
+  .loader-wrapper {
+    left: calc(50vw - 250px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper__panel {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .wrapper__panel--left {
+    flex: 0.5;
+  }
+
+  .wrapper__panel--right {
+    height: 24vh;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 0 -4vw 0 -5vw;
+  }
+
+  .contact-card {
+    border-radius: 20px;
+    background: white;
+    width: 90vw;
+    height: fit-content;
+    font-family: "Sanchez One";
+    flex-direction: row;
+    transition: 0.1s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .contact-card__header {
+    display: flex;
+    justify-content: flex-start;
+    width: 20vw;
+  }
+
+  .contact-card__header__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-card__edit {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80vw;
+    padding-top: 50px;
+    pointer-events: none;
+  }
+
+  .fa-edit {
+    position: relative;
+  }
+  .btn {
+    background: none;
+    border: none;
+    margin: 2% 0;
+    font-size: 4vw;
+    pointer-events: fill;
+  }
+
+  .btn .heart-btn {
+    padding-right: 8vw;
+  }
+
+  .contact-card__properties {
+    font-size: 12px;
+    margin-top: 50px;
+    width: 40vw;
+    justify-content: center;
+    left: calc(50vw - 20vw);
+    gap: 0px;
+  }
+
+  .contact-card__property {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.2rem;
+  }
+
+  .contact-card__name {
+    position: absolute;
+    left: calc(50vw - 20vw);
+    font-weight: 700;
+    font-size: 20px;
+    overflow: auto;
+    width: 40vw;
+  }
+
+  .contact-card__wrapper-1 {
+    display: none;
+  }
+
+  .contact-card__wrapper-0 {
+    top: 10px;
+    right: 0;
+  }
+
+  .wrapper__panel__footer {
+    bottom: 5%;
+  }
+
+  .contact-card__image {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 20vh;
+    width: 20vw;
+  }
+
+  /* expand or collapse */
+
+  .contact-card-abstract {
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    width: 90vw;
+    height: 100px;
+    font-family: "Sanchez One";
+    flex-direction: row;
+    transition: 0.1s;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contact-card__name {
+    font-family: "Sanchez One";
+  }
+
+  .contact-card-abstract__name {
+    display: flex;
+    width: 30vw;
+    justify-content: center;
+    height: 100px;
+    font-weight: 700;
+    font-family: "Sanchez One";
+    font-size: 4vw;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .contact-card-abstract__image {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 98%;
+    width: 30%;
+    overflow: hidden;
+  }
+
+  .contact-expand {
+    width: 25vw;
+    text-align: right;
+    color: green;
+    font-size: 2.7vw;
+    margin: 10px 10px;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+  }
+
+  .contact-minus {
+    position: absolute;
+    color: red;
+    font-size: 3vw;
+    margin-top: 5px;
+    right: 5%;
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+  }
+  .loader-wrapper {
+    left: calc(50vw - 55px);
+  }
+}
+
+/* Buttons */
+
+.btn-wrapper {
+  display: flex;
+  padding-top: 0.5em;
+}
+.btn-wrapper-right {
+  justify-content: flex-end;
+}
+
+.btn-wrapper-left {
+  justify-content: flex-start;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn .heart-btn .fa-heart-1 {
+  color: red;
+}
+
+.btn .heart-btn .fa-heart-1:hover {
+  color: #eeece9;
+}
+.btn .heart-btn .fa-heart-2 {
+  color: #eeece9;
+}
+
+.btn .heart-btn .fa-heart-2:hover {
+  color: red;
+}
+
+/* Forms */
+
+.form-input {
+  padding: 0.5rem;
+  border: 2px solid black;
+  flex: 0.3;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loader {
+  align-self: center;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #c5efa4;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 45%;
+}
+
+.contact-expand:hover,
+.contact-minus:hover {
+  cursor: pointer;
+}

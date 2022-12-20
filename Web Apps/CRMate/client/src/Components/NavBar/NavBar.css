@@ -1,0 +1,211 @@
+/* Desktop */
+@media (min-width: 1200px) {
+  #navbar-bg {
+    position: absolute;
+    width: 331px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 0px 30px 30px 0px;
+  }
+
+  #navbar-logout {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 27px;
+    bottom: 10px;
+    border: none;
+    background-color: white;
+  }
+
+  #navbar-logout-text {
+    position: absolute;
+    left: 45px;
+    top: 3px;
+    font-family: "Sanchez One";
+    font-size: 20px;
+  }
+
+  #navbar-logo-wrapper {
+    cursor: pointer;
+  }
+
+  #navbar-logo {
+    position: absolute;
+    width: 60px;
+    height: 85px;
+    left: 40px;
+    top: 40px;
+  }
+
+  #navbar-logo-text {
+    position: absolute;
+    width: 237px;
+    height: 71px;
+    left: 120px;
+    top: 40px;
+    font-size: 40px;
+    line-height: 51px;
+    color: #000000;
+  }
+
+  .navbar-container > img {
+    width: 70px;
+    padding-left: 20px;
+    height: 10vh;
+    top: 10px;
+  }
+
+  .navbar-container > h3 {
+    width: 200px;
+    margin-top: 3vh;
+    font-family: "Sanchez One";
+
+  }
+  a {
+    text-decoration: none
+  }
+  .navbar-container {
+    justify-content: space-between;
+    font-size: 23px;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    transition-duration: 0.4s;
+    background-color: white;
+    border: none;
+    flex-direction: row;
+
+  }
+
+  #navbar-grid {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    grid-gap: 0px;
+    top: 25%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+
+
+}
+
+/* Mobile */
+@media (max-width: 1200px) {
+  .navbar-title {
+    position: relative;
+    font-weight: bolder;
+    text-align: center;
+    left: 30px;
+    top: -5px;
+    font-family: "Sanchez One";
+    line-height: 29px;
+  }
+
+  #large {
+    font-size: 45px;
+  }
+
+  #small {
+    position: relative;
+    font-size: 35px;
+    top: 20px;
+  }
+
+  #header-bg {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 0px 0px 30px 30px;
+    z-index: 1;
+  }
+  #navbar-bg {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    background: #ffffff;
+    border-radius: 30px 30px 0px 0px;
+    z-index: 3;
+  }
+
+  #navbar-logout {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 4vw;
+    top: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #navbar-logout-text {
+    font-size: 0;
+  }
+
+  #navbar-logo {
+    position: fixed;
+    width: 110px;
+    height: 120px;
+    left: 5px;
+    top: 10px;
+    color: #000000;
+  }
+
+  #navbar-logo-text {
+    font-size: 0;
+    font-family: "Sanchez One"
+  }
+
+  .navbar-container {
+    position: fixed;
+    width: 60px;
+    height: 55px;
+    background-color: white;
+    border: none;
+    margin: 0 calc((100vw - 240px) / 8);
+    border-radius: 20% 20% 20% 20%;
+    transition: 0.4s;
+  }
+
+  .navbar-container > img {
+    width: 45px;
+    height: 45px;
+    transition-duration: 0.4s;
+    margin-left: -2px;
+    margin-top: 3px;
+  }
+
+  .navbar-container > h3 {
+    position: fixed;
+    font-size: 0;
+  }
+
+  #navbar-grid {
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    top: 5px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+  }
+}
+
+/* common components */
+#add,
+#favorite,
+#people,
+#data-migration {
+  background-color: #c5efa4;
+}
+
+
+#navbar-logout:hover,.navbar-container:hover{
+  cursor: pointer;
+}

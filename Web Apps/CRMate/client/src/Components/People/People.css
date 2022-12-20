@@ -1,0 +1,201 @@
+/* general */
+.people-wrapper {
+  background: #e3e3e3;
+
+}
+
+.people-box {
+  justify-content: center;
+  position: relative;
+  left: 331px;
+  width: calc(100vw - 331px);
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Sanchez One";
+  /* animation: 3s ease-in 2s linear infinite; */
+
+}
+
+.people-box .pageTitle {
+  position: relative;
+  padding-top: 50px;
+  width: 1em;
+  left: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.people-box .pageSubTitle {
+  font-size: 30px;
+  left: 100px;
+  position: relative;
+}
+.people-box .people-cards {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 70px 20px 70px;
+  gap: 20px;
+  overflow-y:scroll;
+  height: calc(100vh - 350px);
+}
+
+@media (max-width: 1200px) {
+  .people-wrapper {
+    top: 0px;
+    position: fixed;
+    left: 0px;
+    width: 100%;
+  }
+  .people-box {
+    background: #deecf9;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-family: "Sanchez One";
+  }
+
+  .people-box .pageTitle {
+    font-size: 0px;
+  }
+
+  .people-box .people-cards {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+    grid-gap: 10px;
+    gap: 10px;
+    overflow-y: auto;
+    height: calc(100vh - 200px);
+    flex-direction: row;
+    align-content: flex-start;
+
+  }
+
+  .favorite-page .people-cards{
+    position: relative;
+    top: 70px;
+    height: 80vh !important;
+  }
+
+  .searchBar {
+    background: #fffbfb;
+    position: absolute;
+    display: flex;
+    width: calc(100vw - 160px);
+    height: 40px;
+    top: 130px;
+    left: 150px;
+    border-radius: 15px;
+  }
+  .searchOption {
+    background: #fffafa;
+    border-radius: 15px;
+    width: 120px;
+    height: 35px;
+    top: 130px;
+    position: absolute;
+    left: 15px;
+    padding-top: 5px;
+    z-index: 2;
+  }
+}
+
+/* Search bar */
+
+.searchBar .input {
+  width: calc(100vw - 210px);
+  height: 100%;
+  text-align: left;
+  margin: 0 0 0 calc(20px + 5%);
+  font-size: 18px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.searchBar .searchIcon {
+  position: absolute;
+  top: 17%;
+  left: 3%;
+  font-size: 1.5em;
+  align-items: flex-start;
+}
+
+/*Seach options */
+
+.searchOption .button {
+  text-align: center;
+  line-height: 1.7em;
+  cursor: pointer;
+  height: 100%;
+  font-size: 1.2em;
+}
+
+.searchOption .reversed-triangle {
+  position: absolute;
+  top: 20%;
+  width: 20px;
+  height: 30px;
+  right: 10px;
+}
+
+#option-fields {
+  position: absolute;
+  width: auto;
+  font-weight: bold;
+  left: 20px;
+  z-index: 1;
+}
+
+#option-field {
+  position: relative;
+  width: 130px;
+  background-color: #fffafa;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  left: -15px;
+  top: -5px;
+}
+
+#option-field:hover,
+#option-field:active {
+  transition: 0.2s;
+  background-color: #c5efa4;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .searchOption {
+    background: #fffafa;
+    border-radius: 15px;
+    width: 180px;
+    top: 240px;
+    position: absolute;
+    left: 100px;
+    height: 40px;
+    padding-top: 10px;
+    z-index: 2;
+  }
+
+  .searchBar {
+    position: absolute;
+    display: flex;
+    width: calc(100vw - 660px);
+    height: 50px;
+    top: 240px;
+    left: 300px;
+
+    background: #fffbfb;
+    border-radius: 15px;
+  }
+}

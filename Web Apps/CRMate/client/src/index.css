@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Sanchez One";
+  src: local("Sanchez One"),
+    url(./Assets/fonts/Sanchez-Regular.ttf) format("truetype");
+}

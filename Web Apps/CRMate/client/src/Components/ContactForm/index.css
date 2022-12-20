@@ -1,0 +1,283 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.tag-container {
+  border-radius: 45px;
+  background: white;
+  border: 1px solid black;
+  display: flex;
+  padding: 0.5rem;
+  flex: 1 1;
+  flex-wrap: none;
+  margin: 0.4rem;
+  font-size: 15px;
+  max-width: 50%;
+  gap: 5px;
+  min-width: 50px;
+  justify-content: space-around;
+}
+
+.tag-container__name {
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  cursor: pointer;
+}
+
+.tag-container__name-popout {
+  font-size: 0;
+  z-index: -6;
+}
+
+.tag-container__name:active + .tag-container__name-popout {
+  position: absolute;
+  top:100px;
+  right: 100px;
+  transition: 0.1s;
+  max-width: fit-content;
+  border-radius: 45px;
+  background-color: #c5efa4;
+  border: 1px solid black;
+  margin: 0 1em 0 1em;
+  cursor: pointer;
+  padding: 0.5rem;
+  overflow: visible;
+  width: fit-content;
+  font-size: 140%;
+  font-weight: 900;
+  z-index: 6;
+}
+
+
+.body-wrapper-popup .form-container {
+  height: calc(98vh - 350px);
+}
+.add-tag {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.tag-container__cross {
+  color: red;
+  font-weight: bold;
+}
+
+.tag-container__cross:hover {
+  cursor: pointer;
+}
+
+.cross-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 1200px) {
+  .body-wrapper {
+    background: #e3e3e3;
+    padding: 5rem 5rem 0 5rem;
+    justify-content: center;
+    position: relative;
+    left: 331px;
+    width: calc(100vw - 331px - 10rem);
+    height: calc(100vh - 5rem);
+    font-family: "Sanchez One";
+  }
+
+  .body-wrapper-popup {
+    background: #fff;
+    padding: 4rem;
+    border-radius: 30px;
+    border: 5px solid #000;
+    justify-content: center;
+    position: fixed;
+    font-size: 18px;
+    top: 151px;
+    bottom: 100px;
+    left: calc(50vw - 30vw + 104px);
+    width: 60vw;
+    z-index: 5;
+    font-family: "Sanchez One";
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-form-wrapper {
+    background: #c4e3ffaf;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+  }
+
+  .tag-container__name:active + .tag-container__name-popout {
+    position: absolute;
+    top: 25px;
+    left: 45vw;
+    font-size: 2.5vw;
+  }
+  
+  .body-wrapper {
+    padding: 1.2rem;
+    border-color: black;
+    border-width: 30px;
+    justify-content: center;
+    position: fixed;
+    font-size: 2.5vw;
+    left: calc(5.5vw - 19px);
+    top: 140px;
+    width: 90vw;
+    height: calc(98vh - 100px);
+    z-index: -1;
+    border: 1px solid #aeaeae;
+    background: linear-gradient(#fafafa80, #93c9fc83);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    font-family: "Sanchez One";
+    overflow: scroll;
+    box-shadow: 1px 1px 10px 4px rgb(0 0 0 / 25%);
+  }
+
+  .body-wrapper-popup {
+    padding: 1rem;
+    border-color: black;
+    border-width: 30px;
+    justify-content: center;
+    position: fixed;
+    font-size: 2.5vw;
+    left: calc(10vw - 20px);
+    top: 140px;
+    width: 80vw;
+    height: calc(98vh - 250px);
+    z-index: 5;
+    border: 5px solid #000;
+    background: #ffffff50;
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    font-family: "Sanchez One";
+  }
+
+  .body-wrapper-popup .form-container {
+    height: calc(98vh - 300px);
+    overflow: hidden;
+  }
+
+  .form-cancel {
+    border: 3px solid red;
+  }
+
+  .form-submit {
+    border: 3px solid green;
+    margin-left: 2%;
+  }
+}
+
+.form-label {
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  flex: 0.5;
+}
+
+.form-container .incomplete {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 2px red;
+}
+
+.form-container textarea {
+  border: 2px solid black;
+  padding: 0.5rem;
+  flex: 2;
+}
+
+.btn-with-shadow {
+  border-radius: 40px;
+  font-weight: bold;
+  background: white;
+  margin: 0 0 2% 0;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  cursor: pointer;
+}
+
+.form-cancel {
+  border: 1px solid red;
+}
+
+.form-delete {
+  background: #fcc0c0;
+  border: 1px solid red;
+}
+
+.form-submit {
+  border: 1px solid green;
+  margin-left: 2%;
+}
+
+.tag-wrapper__input-text {
+  border: none;
+  border-bottom: 3px solid black;
+  outline: none;
+  margin-right: 2px;
+  display: inline;
+}
+
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tag-wrapper__tags {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70vw;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.tag-wrapper__input {
+  flex: 1;
+  min-width: 20%;
+  padding: 0.5rem;
+  border: none !important;
+  border-bottom: 1px solid black !important;
+  outline: none;
+}
+
+#icon-check {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
+.form-container__fields__field {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0.1rem;
+  line-height: 1rem;
+}
+
+.form-container__fields__field input {
+  padding: 0.5rem;
+  border: 2px solid black;
+  align-items: center;
+  flex: 2;
+}
+
+.form-container__fields {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-y: auto;
+}
